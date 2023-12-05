@@ -9,10 +9,10 @@ services:
     depends_on:
       - api-02
   api-02:
-     image: kitskat/marcifx:v7.3
+     image: kitskat/marcifx:v7.4
      command: flask run --host=0.0.0.0 --port=5000
      ports:
-        - 5003:5000
+        - 5004:5000
      environment:
         - FLASK_APP=app.py
      depends_on:
