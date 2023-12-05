@@ -7,8 +7,8 @@ services:
     volumes:
       - ./html:/usr/share/nginx/html:ro
     depends_on:
-      - api-03
-  api-03:
+      - api-04
+  api-04:
      image: kitskat/marcifx:v7.5
      command: flask run --host=0.0.0.0 --port=5000
      ports:
