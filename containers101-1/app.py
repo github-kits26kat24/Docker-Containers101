@@ -24,7 +24,7 @@ def getversion():
 
 @app.route("/saveregion", methods = ["GET"])
 def saveregion():
-    value = "<h1> Failed to save</h1>"
+    value = "<h1>save</h1>"
 
     country = request.args.get("country")
     city = request.args.get("city")
