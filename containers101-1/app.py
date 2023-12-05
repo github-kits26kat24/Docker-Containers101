@@ -9,7 +9,8 @@ r = redis.Redis(host="cache-server", port=6379)
 
 @app.route("/getregion", methods = ["GET"])
 def getregion():
-    value ='<h1>Not found</h1>'
+    value = "pass"
+    # value ='<h1>Not found</h1>'
     country = request.args.get("country")
     try:
         city = r.get (country)
@@ -24,7 +25,8 @@ def getversion():
 
 @app.route("/saveregion", methods = ["GET"])
 def saveregion():
-    value = "<h1> Failed to save</h1>"
+    value = "pass"
+    # value = "<h1> Failed to save</h1>"
 
     country = request.args.get("country")
     city = request.args.get("city")
